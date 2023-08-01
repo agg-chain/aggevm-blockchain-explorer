@@ -208,62 +208,32 @@
   "keplr": "{\"chainId\":\"desmos-mainnet\",\"chainName\":\"Desmos\",\"chainSymbolImageUrl\":\"https://raw.githubusercontent.com/chainapsis/keplr-chain-registry/main/images/desmos-mainnet/chain.png\",\"rpc\":\"https://rpc.mainnet.desmos.network\",\"rest\":\"https://api.mainnet.desmos.network\",\"nodeProvider\":{\"name\":\"Forbole\",\"email\":\"info@forbole.com\",\"website\":\"https://www.forbole.com\"},\"bip44\":{\"coinType\":852},\"bech32Config\":{\"bech32PrefixAccAddr\":\"desmos\",\"bech32PrefixAccPub\":\"desmospub\",\"bech32PrefixValAddr\":\"desmosvaloper\",\"bech32PrefixValPub\":\"desmosvaloperpub\",\"bech32PrefixConsAddr\":\"desmosvalcons\",\"bech32PrefixConsPub\":\"desmosvalconspub\"},\"currencies\":[{\"coinDenom\":\"DSM\",\"coinMinimalDenom\":\"udsm\",\"coinDecimals\":6,\"coinGeckoId\":\"desmos\"}],\"feeCurrencies\":[{\"coinDenom\":\"DSM\",\"coinMinimalDenom\":\"udsm\",\"coinDecimals\":6,\"coinGeckoId\":\"desmos\",\"gasPriceStep\":{\"low\":0.01,\"average\":0.03,\"high\":0.05}}],\"stakeCurrency\":{\"coinDenom\":\"DSM\",\"coinMinimalDenom\":\"udsm\",\"coinDecimals\":6,\"coinGeckoId\":\"desmos\"},\"features\":[]}",
   "chains": [
     {
-      "network": "desmos-mainnet",
+      "network": "Agg-mainnet",
       "chainType": "Mainnet",
       "genesis": {
-        "time": "2021-08-31T16:15:00",
+        "time": "2023-07-31T16:15:00",
         "height": 1
       },
       "prefix": {
-        "consensus": "desmosvalcons",
-        "validator": "desmosvaloper",
-        "account": "desmos"
+        "consensus": "aggvalcons",
+        "validator": "aggvaloper",
+        "account": "agg"
       },
-      "primaryTokenUnit": "udsm",
-      "votingPowerTokenUnit": "udsm",
+      "primaryTokenUnit": "uagg",
+      "votingPowerTokenUnit": "uagg",
       "tokenUnits": {
-        "udsm": {
-          "display": "dsm",
+        "uagg": {
+          "display": "agg",
           "exponent": 6
         }
       },
       "endpoints": {
-        "graphql": "https://gql.desmos.forbole.com/v1/graphql",
-        "graphqlWebsocket": "wss://gql.desmos.forbole.com/v1/graphql",
-        "publicRpcWebsocket": "wss://rpc.desmos.forbole.com/websocket"
+        "graphql": "https://aggevm-graphql.web3-idea.xyz/v1/graphql",
+        "graphqlWebsocket": "ws://aggevm-graphql.web3-idea.xyz/v1/graphql",
+        "publicRpcWebsocket": "ws://aggevm-rpc.web3-idea.xyz/websocket"
       },
       "marketing": {
-        "matomoURL": "https://analytics.bigdipper.live",
-        "matomoSiteID": "8"
-      }
-    },
-    {
-      "network": "morpheus-apollo-3",
-      "chainType": "Testnet",
-      "genesis": {
-        "time": "2022-10-24T08:00:00",
-        "height": 7942286
-      },
-      "prefix": {
-        "consensus": "desmosvalcons",
-        "validator": "desmosvaloper",
-        "account": "desmos"
-      },
-      "primaryTokenUnit": "udaric",
-      "votingPowerTokenUnit": "udaric",
-      "tokenUnits": {
-        "udaric": {
-          "display": "daric",
-          "exponent": 6
-        }
-      },
-      "endpoints": {
-        "graphql": "https://gql-morpheus.desmos.forbole.com/v1/graphql",
-        "graphqlWebsocket": "wss://gql-morpheus.desmos.forbole.com/v1/graphql",
-        "publicRpcWebsocket": "wss://rpc-morpheus.desmos.forbole.com/websocket"
-      },
-      "marketing": {
-        "matomoURL": "https://analytics.bigdipper.live",
+        "matomoURL": "https://agg-explorer.web3-idea.xyz",
         "matomoSiteID": "8"
       }
     }
